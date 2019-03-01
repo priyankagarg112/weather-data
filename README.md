@@ -12,11 +12,14 @@ based on following metrics:
 - *Tmin* (min temperature)
 - *Rainfall*
 
-The data is scrapped into JSON and stored at AWS S3.
-The url format on S3 is:
+The data is scrapped into JSON and stored at AWS S3.The url format on S3 is:
+
 https://s3.eu-west-2.amazonaws.com/interview-question-data/metoffice/{metric}-{location}.json
+
 E.g:
+
 https://s3.eu-west-2.amazonaws.com/interview-question-data/metoffice/Rainfall-England.json
+
 #### Requirements:
 - Django==2.1.5
 - Python==3.6.7
