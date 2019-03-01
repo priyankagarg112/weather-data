@@ -54,16 +54,23 @@ python manage.py store_data
 ```
 ##### 2. Retrieve Data via REST API
 Return weather data of a metric between start date and end date for a particular location. 
+
 * **Endpoint**
  */api/*
 * **Method:**
   `GET`
 *  **URL Params**
+
    *Required:*
+   
    `start_date=[DD-MM-YYYY]`
+   
     `end_date=[DD-MM-YYYY]`
-   `metric_type=Tmax | Tmin | Rainfall`
-   `location=UK | England | Wales | Scotland`
+    
+   `metric_type=Tmax|Tmin|Rainfall`
+   
+   `location=UK|England|Wales|Scotland`
+   
 *  **Sample Call**
 `/api/?start_date=01-02-1999&end_date=01-02-2019&metric_type=Tmax&location=UK`
 
